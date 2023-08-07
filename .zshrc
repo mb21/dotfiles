@@ -1,7 +1,7 @@
 source ~/.env
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/maurobieg/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="simple-modified"
