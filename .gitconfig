@@ -1,0 +1,5 @@
+[user]
+name = mb21
+email = mb21@users.noreply.github.com
+[core]
+  excludesFile = ~/.gitignore
