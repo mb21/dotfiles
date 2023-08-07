@@ -1,0 +1,52 @@
+{
+    "editor.fontSize": 14,
+    "editor.rulers": [90],
+    "editor.renderLineHighlight": "none",
+    "workbench.statusBar.visible": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#ebebeb",
+        "statusBar.foreground": "#616161",
+        "statusBar.noFolderBackground" : "#ffffff",
+        "statusBar.debuggingBackground": "#dcdcdc",
+        "activityBar.background": "#dcdcdc",
+        "activityBar.foreground": "#616161"
+    },
+    "editor.tokenColorCustomizations": {
+        //see https://github.com/Microsoft/vscode-markdown-tm-grammar/blob/master/markdown.tmLanguage.base.yaml
+        "textMateRules": [
+            { "scope": "heading.1.markdown", "settings": { "foreground": "#191919"} },
+            { "scope": "heading.2.markdown", "settings": { "foreground": "#191919"} },
+            { "scope": "heading.3.markdown", "settings": { "foreground": "#191919"} },
+            { "scope": "heading.4.markdown", "settings": { "foreground": "#191919"} },
+            { "scope": "markup.quote.markdown", "settings": { "foreground": "#616161"} }, //see https://github.com/Microsoft/vscode/issues/3429
+            { "scope": "markup.raw.block.markdown", "settings": { "foreground": "#616161"} },
+        ]
+    },
+    "[markdown]": {
+        "editor.fontSize": 16,
+        "editor.lineHeight": 30,
+        "editor.lineNumbers": "off",
+        "editor.acceptSuggestionOnEnter": "off",
+        "editor.minimap.enabled": false,
+        "editor.wordWrapColumn": 80,
+        "editor.wordWrap": "bounded",
+    },
+    "[javascript]": {
+        "editor.tabSize": 2
+    },
+    "editor.minimap.enabled": false,
+    "editor.autoClosingQuotes": "never",
+    "editor.autoClosingBrackets": "never",
+    "editor.tabSize": 2,
+    "files.insertFinalNewline": true,
+    "window.zoomLevel": 0,
+    "html.autoClosingTags": false,
+    "javascript.autoClosingTags": false,
+    "typescript.autoClosingTags": false,
+    "explorer.confirmDragAndDrop": false,
+    "window.autoDetectColorScheme": true,
+    "editor.inlineSuggest.enabled": true,
+    "workbench.colorTheme": "Default Light+",
+    "vim.statusBarColors.normal": ""
+}
