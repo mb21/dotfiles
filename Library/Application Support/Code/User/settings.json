@@ -48,5 +48,6 @@
     "window.autoDetectColorScheme": true,
     "editor.inlineSuggest.enabled": true,
     "workbench.colorTheme": "Default Light+",
+    "files.trimTrailingWhitespace": true,
     "vim.statusBarColors.normal": ""
 }
