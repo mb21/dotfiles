@@ -30,7 +30,7 @@ nnoremap gp `[v`]
 
 if has("gui_running")
     set guioptions=egmrt
-    set guifont=Monaco:h12
+    set guifont=Monaco:h14
 
     "when using shift to select words in insert mode, don't include character on the right of cursor
     "deactivated because indenting won't work on mouse selection
@@ -72,7 +72,8 @@ set wildmode=longest,list,full
 "load bash for :!
 :set shell=/bin/bash\ --login\ -i
 
-"prevent vim-ruby from doing hover dialogs
-autocmd BufNewFile,BufRead *.rb   set balloonexpr=""
-autocmd BufNewFile,BufRead *.erb  set balloonexpr=""
-autocmd BufNewFile,BufRead *.rake set balloonexpr=""
+:set timeout ttimeoutlen=100 "see https://vi.stackexchange.com/questions/15633
+let &t_ti.="\<Esc>[1 q"
+let &t_SI.="\<Esc>[5 q"
+let &t_EI.="\<Esc>[1 q"
+let &t_te.="\<Esc>[0 q"
