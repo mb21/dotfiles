@@ -95,6 +95,7 @@ alias gl = git pull
 alias gp = git push
 alias gb = git branch
 alias gd = git diff
+alias gf = git fetch
 
 # load ssh passphrase from keychain (otherwise it's not persisted after logging user out)
 ssh-add --apple-use-keychain err> /dev/null
