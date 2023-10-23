@@ -80,6 +80,7 @@ $env.EDITOR = 'vim'
 
 $env.PATH = ($env.PATH | split row (char esep)
   | append $"($env.HOME)/.volta/bin"
+  | append $"($env.HOME)/.cargo/bin"
   | append '/opt/homebrew/bin'
 )
 
