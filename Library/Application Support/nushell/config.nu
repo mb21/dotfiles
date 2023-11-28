@@ -5,4 +5,5 @@ $env.config = {
     vi_insert: line,
     vi_normal: block,
   },
+  shell_integration: true,
 }
