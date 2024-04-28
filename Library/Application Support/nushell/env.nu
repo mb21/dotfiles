@@ -45,7 +45,7 @@ def create_right_prompt [] {
 }
 
 export def git-repo-info [] {
-  let commit_hash = do --ignore-errors { git rev-parse --short HEAD } | str trim
+  let commit_hash = do -i { git rev-parse --short HEAD | complete } | get stdout | str trim
   let in_git_repo = not ($commit_hash | is-empty)
   let branch_name = if $in_git_repo {
     git branch --show-current | str trim
@@ -83,6 +83,8 @@ $env.PATH = ($env.PATH | split row (char esep)
   | append $"($env.HOME)/.cargo/bin"
   | append '/opt/homebrew/bin'
 )
+
+$env.VOLTA_FEATURE_PNPM = 1
 
 alias vscode = `/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code`
 alias c = clear
