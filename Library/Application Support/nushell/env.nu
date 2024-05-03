@@ -79,9 +79,12 @@ $env.PROMPT_MULTILINE_INDICATOR = {|| "::: " }
 $env.EDITOR = 'vim'
 
 $env.PATH = ($env.PATH | split row (char esep)
+  | prepend $"($env.HOME)/.rbenv/shims"
   | append $"($env.HOME)/.volta/bin"
   | append $"($env.HOME)/.cargo/bin"
   | append '/opt/homebrew/bin'
+  | append '/sbin'
+  | append '/usr/sbin'
 )
 
 $env.VOLTA_FEATURE_PNPM = 1
