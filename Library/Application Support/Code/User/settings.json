@@ -1,4 +1,7 @@
 {
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit",
+    },
     "editor.fontSize": 14,
     "editor.rulers": [90],
     "editor.renderLineHighlight": "none",
@@ -8,9 +11,13 @@
         "statusBar.foreground": "#616161",
         "statusBar.noFolderBackground" : "#ffffff",
         "statusBar.debuggingBackground": "#dcdcdc",
+        "statusBarItem.remoteBackground": "#ebebeb",
+        "statusBarItem.remoteForeground": "#616161",
         "activityBar.background": "#dcdcdc",
         "activityBar.foreground": "#616161"
     },
+    "workbench.activityBar.location": "hidden",
+    "workbench.colorTheme": "Default Light Modern",
     "editor.tokenColorCustomizations": {
         //see https://github.com/Microsoft/vscode-markdown-tm-grammar/blob/master/markdown.tmLanguage.base.yaml
         "textMateRules": [
@@ -28,6 +35,7 @@
         "editor.lineNumbers": "off",
         "editor.acceptSuggestionOnEnter": "off",
         "editor.minimap.enabled": false,
+        "editor.tabSize": 2,
         "editor.wordWrapColumn": 80,
         "editor.wordWrap": "bounded",
     },
@@ -45,6 +53,9 @@
     "explorer.confirmDragAndDrop": false,
     "window.autoDetectColorScheme": true,
     "editor.inlineSuggest.enabled": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        { "before": [ "g", "p" ], "after": [ "V", "'", "]", "k" ] },
+    ],
     "vim.statusBarColors.normal": "",
     "window.zoomLevel": 1,
     "files.trimTrailingWhitespace": true,
@@ -58,11 +69,8 @@
     "editor.acceptSuggestionOnCommitCharacter": false,
     "rust-analyzer.inlayHints.typeHints.enable": false,
     "rust-analyzer.inlayHints.parameterHints.enable": false,
-    "workbench.activityBar.location": "top",
     "[typescriptreact]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
-    "workbench.statusBar.visible": false,
-    "workbench.colorTheme": "Default Light Modern",
-    "html.autoCreateQuotes": false
+    "html.autoCreateQuotes": false,
 }

@@ -47,8 +47,9 @@ if has("gui_running")
     set regexpengine=1
 endif
 
-" set every new or read *.md buffer to use the markdown filetype 
+" set every new or read *.md buffer to use the markdown filetype
 autocmd BufRead,BufNewFile *.md set ft=markdown
+autocmd BufRead,BufNewFile *.md set shiftwidth=2
 
 " don't continue comments on new lines, see :help fo-table
 autocmd BufRead,BufNewFile * setlocal formatoptions-=o formatoptions-=r
