@@ -1,5 +1,13 @@
 # Nushell Environment Config File
 
+export def swap [file1, file2] {
+  let tmpDir = mktemp -d
+  let tmpFile = $tmpDir + '/file'
+  mv $file1 $tmpFile
+  mv $file2 $file1
+  mv $tmpFile $file2
+}
+
 def create_left_prompt [] {
   mut home = ""
   try {
@@ -75,15 +83,21 @@ $env.PROMPT_MULTILINE_INDICATOR = {|| "::: " }
 $env.EDITOR = 'vim'
 
 $env.PATH = ($env.PATH | split row (char esep)
+  | prepend '../venv/bin'
+  | prepend './venv/bin'
   | prepend $"($env.HOME)/.rbenv/shims"
   | append $"($env.HOME)/.volta/bin"
   | append $"($env.HOME)/.cargo/bin"
+  | append $"($env.HOME)/.deno/bin"
   | append '/opt/homebrew/bin'
+  | append '/Library/TeX/texbin'
   | append '/sbin'
   | append '/usr/sbin'
 )
 
 $env.VOLTA_FEATURE_PNPM = 1
+
+alias activate_venv = sh -i -c 'source venv/bin/activate ; nu'
 
 alias vscode = `/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code`
 alias c = clear
