@@ -15,6 +15,9 @@ set listchars=tab:>-,trail:·,extends:>,precedes:<,nbsp:.
 "select pasted text
 nnoremap gp `[v`]
 
+" Use new regular expression engine, see https://jameschambers.co.uk/vim-typescript-slow
+set re=0
+
 "ccrypt stuff
  au!
  au BufReadPre *.cpt set bin
