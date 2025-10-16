@@ -1,76 +1,67 @@
 {
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": "explicit",
-    },
-    "editor.fontSize": 14,
-    "editor.rulers": [90],
-    "editor.renderLineHighlight": "none",
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorCustomizations": {
-        "statusBar.background": "#ebebeb",
-        "statusBar.foreground": "#616161",
-        "statusBar.noFolderBackground" : "#ffffff",
-        "statusBar.debuggingBackground": "#dcdcdc",
-        "statusBarItem.remoteBackground": "#ebebeb",
-        "statusBarItem.remoteForeground": "#616161",
-        "activityBar.background": "#dcdcdc",
-        "activityBar.foreground": "#616161"
-    },
-    "workbench.activityBar.location": "hidden",
-    "workbench.colorTheme": "Default Light Modern",
-    "editor.tokenColorCustomizations": {
-        //see https://github.com/Microsoft/vscode-markdown-tm-grammar/blob/master/markdown.tmLanguage.base.yaml
-        "textMateRules": [
-            { "scope": "heading.1.markdown", "settings": { "foreground": "#191919"} },
-            { "scope": "heading.2.markdown", "settings": { "foreground": "#191919"} },
-            { "scope": "heading.3.markdown", "settings": { "foreground": "#191919"} },
-            { "scope": "heading.4.markdown", "settings": { "foreground": "#191919"} },
-            { "scope": "markup.quote.markdown", "settings": { "foreground": "#616161"} }, //see https://github.com/Microsoft/vscode/issues/3429
-            { "scope": "markup.raw.block.markdown", "settings": { "foreground": "#616161"} },
-        ]
-    },
-    "[markdown]": {
-        "editor.fontSize": 16,
-        "editor.lineHeight": 30,
-        "editor.lineNumbers": "off",
-        "editor.acceptSuggestionOnEnter": "off",
-        "editor.minimap.enabled": false,
-        "editor.tabSize": 2,
-        "editor.wordWrapColumn": 80,
-        "editor.wordWrap": "bounded",
-    },
-    "[javascript]": {
-        "editor.tabSize": 2
-    },
-    "editor.minimap.enabled": false,
-    "editor.autoClosingQuotes": "never",
-    "editor.autoClosingBrackets": "never",
-    "editor.tabSize": 2,
-    "files.insertFinalNewline": true,
-    "html.autoClosingTags": false,
-    "javascript.autoClosingTags": false,
-    "typescript.autoClosingTags": false,
-    "explorer.confirmDragAndDrop": false,
-    "window.autoDetectColorScheme": true,
-    "editor.inlineSuggest.enabled": true,
-    "vim.normalModeKeyBindingsNonRecursive": [
-        { "before": [ "g", "p" ], "after": [ "V", "'", "]", "k" ] },
+  "[markdown]": {
+    "editor.fontSize": 16,
+    "editor.lineHeight": 30,
+    "editor.lineNumbers": "off",
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.wordWrapColumn": 80,
+    "editor.wordWrap": "bounded"
+  },
+  "chat.disableAIFeatures": true,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.autoClosingBrackets": "never",
+  "editor.autoClosingQuotes": "never",
+  "editor.fontSize": 14,
+  "editor.minimap.enabled": false,
+  "editor.renderLineHighlight": "none",
+  "editor.rulers": [90],
+  "editor.tabSize": 2,
+  "editor.tokenColorCustomizations": {
+    //see https://github.com/Microsoft/vscode-markdown-tm-grammar/blob/master/markdown.tmLanguage.base.yaml
+    "textMateRules": [
+        { "scope": "heading.1.markdown", "settings": { "foreground": "#191919"} },
+        { "scope": "heading.2.markdown", "settings": { "foreground": "#191919"} },
+        { "scope": "heading.3.markdown", "settings": { "foreground": "#191919"} },
+        { "scope": "heading.4.markdown", "settings": { "foreground": "#191919"} },
+      { "scope": "markup.quote.markdown", "settings": { "foreground": "#616161"} }, //see https://github.com/Microsoft/vscode/issues/3429
+      { "scope": "markup.raw.block.markdown", "settings": { "foreground": "#616161"} },
     ],
-    "vim.statusBarColors.normal": "",
-    "window.zoomLevel": 1,
-    "files.trimTrailingWhitespace": true,
-    "gitlens.codeLens.enabled": false,
-    "gitlens.statusBar.enabled": false,
-    "gitlens.hovers.enabled": false,
-    "gitlens.changes.locations": [],
-    "gitlens.heatmap.locations": [],
-    "gitlens.heatmap.fadeLines": false,
-    "gitlens.mode.statusBar.enabled": false,
-    "editor.acceptSuggestionOnCommitCharacter": false,
-    "rust-analyzer.inlayHints.typeHints.enable": false,
-    "rust-analyzer.inlayHints.parameterHints.enable": false,
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "html.autoCreateQuotes": false,
+    "[*Dark*]": {
+      "textMateRules": [
+          { "scope": "heading.1.markdown", "settings": { "foreground": "#cccccc"} },
+          { "scope": "heading.2.markdown", "settings": { "foreground": "#cccccc"} },
+          { "scope": "heading.3.markdown", "settings": { "foreground": "#cccccc"} },
+          { "scope": "heading.4.markdown", "settings": { "foreground": "#cccccc"} },
+      ]
+    }
+  },
+  "explorer.confirmDragAndDrop": false,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "html.autoClosingTags": false,
+  "html.autoCreateQuotes": false,
+  "javascript.autoClosingTags": false,
+  "js/ts.hover.maximumLength": 9999,
+  "typescript.autoClosingTags": false,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    { "before": ["g", "p"], "after": ["V", "'", "]", "k"] }
+  ],
+  "vim.statusBarColors.normal": "",
+  "window.autoDetectColorScheme": true,
+  "window.zoomLevel": 1,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#ebebeb",
+    "statusBar.foreground": "#616161",
+    "statusBar.noFolderBackground": "#ffffff",
+    "statusBar.debuggingBackground": "#dcdcdc",
+    "statusBarItem.remoteBackground": "#ebebeb",
+    "statusBarItem.remoteForeground": "#616161",
+    "activityBar.background": "#dcdcdc",
+    "activityBar.foreground": "#616161"
+  },
+  "workbench.colorTheme": "Default Light Modern",
+  "workbench.settings.applyToAllProfiles": [],
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.activityBar.location": "hidden",
+  "workbench.statusBar.visible": false,
 }
