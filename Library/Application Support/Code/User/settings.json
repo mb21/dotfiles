@@ -50,6 +50,7 @@
   "window.autoDetectColorScheme": true,
   "window.zoomLevel": 1,
   "workbench.colorCustomizations": {
+    "editorIndentGuide.background1": "#00000001",
     "statusBar.background": "#ebebeb",
     "statusBar.foreground": "#616161",
     "statusBar.noFolderBackground": "#ffffff",
